@@ -1,0 +1,13 @@
+# Runtime
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.7
+pyjwt>=2.8
+python-multipart>=0.0.9
+python-dotenv>=1.0
+anthropic>=1.0
+# Tests, demo script and security checks
+pytest>=8.0
+httpx>=0.27
+bandit>=1.7
+pip-audit>=2.7

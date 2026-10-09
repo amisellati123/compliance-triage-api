@@ -77,8 +77,8 @@ Without an API key the service runs on the rules alone, and every result shows
 `"source": "rules"`.
 
 1. Create an API key in the Claude Console: https://platform.claude.com/settings/keys
-2. Put it in `.env` as `ANTHROPIC_API_KEY=...`
-3. Restart the API and run `python scripts/demo.py` again.
+2. Run `python scripts/set_key.py` and paste the key when it asks. The key is never shown
+   on screen. The script checks it, saves it in `.env`, restarts the API and runs the demo.
 
 Results now show `"source": "claude"` with a short reason from the model. Two of the
 sample findings carry prompt-injection text in their note, so you can watch what the

@@ -34,7 +34,7 @@ RULES: dict[Issue, tuple[Risk, Action]] = {
     Issue.firewall_off: (Risk.medium, Action.enable_firewall),
     Issue.antivirus_unhealthy: (Risk.high, Action.repair_antivirus),
     Issue.encryption_off: (Risk.high, Action.enable_encryption),
-    Issue.jailbroken_or_rooted: (Risk.high, Action.restrict_access),
+    Issue.jailbroken_or_rooted: (Risk.high, Action.restrict_access), Issue.usb_storage_enabled: (Risk.medium, Action.block_usb_storage),
 }
 
 STALE_AFTER_DAYS = 30

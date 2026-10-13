@@ -31,7 +31,7 @@ def make(**overrides) -> FindingIn:
         ("firewall_off", Risk.medium, Action.enable_firewall),
         ("antivirus_unhealthy", Risk.high, Action.repair_antivirus),
         ("encryption_off", Risk.high, Action.enable_encryption),
-        ("jailbroken_or_rooted", Risk.high, Action.restrict_access),
+        ("jailbroken_or_rooted", Risk.high, Action.restrict_access), ("usb_storage_enabled", Risk.medium, Action.block_usb_storage),
     ],
 )
 def test_rules_cover_every_issue(issue, risk, action):

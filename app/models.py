@@ -22,7 +22,9 @@ class Issue(str, Enum):
     firewall_off = "firewall_off"
     antivirus_unhealthy = "antivirus_unhealthy"
     encryption_off = "encryption_off"
-    jailbroken_or_rooted = "jailbroken_or_rooted"
+    jailbroken_or_rooted = "jailbroken_or_rooted" 
+    usb_storage_enabled = "usb_storage_enabled"
+
 
 
 class Risk(str, Enum):
@@ -41,7 +43,10 @@ class Action(str, Enum):
     repair_antivirus = "repair_antivirus"
     enable_encryption = "enable_encryption"
     restrict_access = "restrict_access"
-    retire_device = "retire_device"
+    retire_device = "retire_device" 
+    block_usb_storage = "block_usb_storage"
+
+
 
 
 class Status(str, Enum):
